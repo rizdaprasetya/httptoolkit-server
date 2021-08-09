@@ -2,7 +2,7 @@ import * as stream from 'stream';
 import * as path from 'path';
 import * as adb from '@devicefarmer/adbkit';
 import { reportError } from '../../error-tracking';
-import { delay, waitUntil } from '../../util';
+import { delay, waitUntil } from '../../util/promise';
 import { getCertificateFingerprint, parseCert } from '../../certificates';
 
 export const ANDROID_TEMP = '/data/local/tmp';
